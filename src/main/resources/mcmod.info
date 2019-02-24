@@ -1,0 +1,12 @@
+[
+  {
+    "modid": "mekanismjeifix",
+    "name": "Mekanism JEI Fix",
+    "description": "Fixes Mekanism's JEI Gas Rendering.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "authorList": ["pupnewfster"],
+    "credits": ""
+  }
+]
