@@ -22,6 +22,11 @@ import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * From Mekanism.
+ * <p>
+ * https://github.com/aidancbrady/Mekanism/blob/master/src/main/java/mekanism/client/jei/gas/GasStackRenderer.java
+ */
 public class GasStackRenderer implements IIngredientRenderer<GasStack> {
     private static final int TEX_WIDTH = 16;
     private static final int TEX_HEIGHT = 16;
@@ -89,7 +94,7 @@ public class GasStackRenderer implements IIngredientRenderer<GasStack> {
 
         TextureAtlasSprite gasStillSprite = getStillGasSprite(minecraft, gas);
 
-        int gasColor = gas.getTint();
+        int gasColor = gas.getTint(); //Changed from 0xFFFFFFFF so that coloring works
 
         int scaledAmount = (gasStack.amount * height) / capacityMb;
 
