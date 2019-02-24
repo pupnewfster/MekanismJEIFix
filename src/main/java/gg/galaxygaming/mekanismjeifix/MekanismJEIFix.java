@@ -1,10 +1,7 @@
 package gg.galaxygaming.mekanismjeifix;
 
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
-import org.apache.logging.log4j.Logger;
 
 import javax.annotation.Nullable;
 import java.io.File;
@@ -14,13 +11,7 @@ import java.util.Map;
 @Mod(clientSideOnly = true, modid = Constants.MOD_ID, name = Constants.MOD_NAME, version = Constants.VERSION,
         dependencies = Constants.DEPENDENCIES, acceptedMinecraftVersions = Constants.MC_VERSION)
 public class MekanismJEIFix implements IFMLLoadingPlugin {
-    static Logger logger;
     static File location;
-
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
-        logger = event.getModLog();
-    }
 
     @Override
     public String[] getASMTransformerClass() {
